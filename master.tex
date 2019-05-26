@@ -32,6 +32,7 @@
 	\usepackage{algorithm2e}
 	\usepackage[final]{pdfpages}
 	\usepackage{listings}
+	\usepackage{todonotes}
 
 	\definecolor{light-gray}{gray}{0.85}
 	\definecolor{dkgreen}{RGB}{0.0,128.0,43.0}
@@ -188,14 +189,6 @@ Andrzej \textsc{Filinski}\\
             \thispagestyle{empty}   % Fjerner sidetal fra indholdsfortegnelse %
             \tableofcontents        % Skaber indholdsfortegnelse              %
     \end{center}
-	\section*{Preface}
-		\textbf{Disclaimer}: A lot of code has been copied in our project, and thus variable names, comments, etc. might still be unchanged. This has not been a focus for this report draft, and will be changed later.
-		
-	\subsection*{What has been implemented?}
-		Task 1 has been solved with the exception of \textit{true} and \textit{false} in \textit{Lexer.fsl}, \textit{Parser.fsp}, \textit{TypeChecker.fs} and \textit{CodeGen.fs}.\\
-		Task 2 has been solved with the exception of \textit{scan} (although it has been worked on) in \textit{Lexer.fsl}, \textit{Parser.fsp}, \textit{TypeChecker.fs} and \textit{CodeGen.fs}.\\
-		Testing has not been a priority for this report draft, thus limited testing has been done. Nonetheless some tests has been written: \textit{filterSimple.fo, not.fo, or.fo, replicateInt.fo} and has been added to the tests folder.
-    
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \newpage                % Første rigtige side
     \setcounter{page}{1}    % Sætter rigtigt sidetal på første side
@@ -203,8 +196,10 @@ Andrzej \textsc{Filinski}\\
 
 \end{titlepage}
 {\fontsize{12}{14}\selectfont
-        \include{Sections/Lexer}
-        \include{Sections/Parser}
-        \include{Sections/TypeChecker}
+    \include{Sections/Lexer}
+    \include{Sections/Parser}
+    \include{Sections/TypeChecker}
 	\include{Sections/CodeGen/CodeGen}
+	\include{Sections/Interpreter}
+	\include{Sections/Optimization/Optimization}
 \end{document}
