@@ -1,5 +1,5 @@
 \subsection{CopyConstPropFold.fs}
-Constant / copy propagation revolves around substituting longer abstract syntax tree \todo{?} expressions with smaller more optimized abstract syntax tree expressions. For instance, a long expression involving multiplication with zero will always result in zero, and thus as soon we see we are doing multiplication with zero we can just return the optimized expression zero. This optimization along with optimization for multiplication with one has been implemented on lines 85-97 in CopyConstPropFold.fs as seen below.\\
+The optimization done in 'copyConstPropFold.fs' revolves around substituting longer abstract syntax tree expressions with smaller more optimized abstract syntax tree expressions. For instance, a long expression involving multiplication with zero will always result in zero, and thus as soon we see we are doing multiplication with zero we can just return the optimized expression zero. This optimization along with optimization for multiplication with one has been implemented on lines 85-97 in CopyConstPropFold.fs as seen below.\\
 \includegraphics[width=\linewidth]{Materials/Optimization/Times}\\
 Similarly short circuiting has been implemented on lines 98-107 for \textit{And}.\\
 \includegraphics[width=\linewidth]{Materials/Optimization/And}\\
